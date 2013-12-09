@@ -30,3 +30,7 @@ Une fois fait vous devais le charger avant de l'utiliser à l'aide de
     date_default_timezone_set('America/New_York');
     echo generate_ics(date('Y:m:d H:i:s'), 'contenue', '13', '15');
 ```
+
+License
+-------
+MIT: http://kezho.mit-license.org/
