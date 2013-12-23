@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Ci-helper-calendar : Ce repository contient le helper pour générer un fichier .cal pour l'importation dans google calendar, ou outlook." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ci-helper-calendar</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mfrancois/ci-helper-calendar">View on GitHub</a>
+
+          <h1 id="project_title">Ci-helper-calendar</h1>
+          <h2 id="project_tagline">Ce repository contient le helper pour générer un fichier .cal pour l'importation dans google calendar, ou outlook.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mfrancois/ci-helper-calendar/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mfrancois/ci-helper-calendar/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="ci-helper-calendar" class="anchor" href="#ci-helper-calendar"><span class="octicon octicon-link"></span></a>ci-helper-calendar</h1>
+
+<h2>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Ce repository contient le helper pour générer un fichier .cal pour l'importation dans google calendar, ou outlook.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Pou l'installer il vous suffit de copier coller le helper dans le répertoire correspondant dans codeigniter <code>application/helpers/calendar_helper.php</code>.</p>
+
+<p>Une fois fait vous devais le charger avant de l'utiliser à l'aide de</p>
+
+<div class="highlight highlight-php"><pre>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">'calendar_helper'</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="exemple-de-t%C3%A9l%C3%A9chargement-du-fichier-cal" class="anchor" href="#exemple-de-t%C3%A9l%C3%A9chargement-du-fichier-cal"><span class="octicon octicon-link"></span></a>Exemple de téléchargement du fichier .cal</h3>
+
+<div class="highlight highlight-php"><pre>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">'calendar_helper'</span><span class="p">);</span>
+    <span class="nb">date_default_timezone_set</span><span class="p">(</span><span class="s1">'America/New_York'</span><span class="p">);</span>
+    <span class="nx">download_ics</span><span class="p">(</span><span class="nb">date</span><span class="p">(</span><span class="s1">'Y:m:d H:i:s'</span><span class="p">),</span> <span class="s1">'Titre'</span><span class="p">,</span> <span class="s1">'contenue'</span><span class="p">,</span> <span class="s1">'13'</span><span class="p">,</span> <span class="s1">'15'</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="exemple-de-g%C3%A9n%C3%A9ration-du-contenue-du-fichier" class="anchor" href="#exemple-de-g%C3%A9n%C3%A9ration-du-contenue-du-fichier"><span class="octicon octicon-link"></span></a>Exemple de génération du contenue du fichier</h3>
+
+<div class="highlight highlight-php"><pre>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">'calendar_helper'</span><span class="p">);</span>
+    <span class="nb">date_default_timezone_set</span><span class="p">(</span><span class="s1">'America/New_York'</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="nx">generate_ics</span><span class="p">(</span><span class="nb">date</span><span class="p">(</span><span class="s1">'Y:m:d H:i:s'</span><span class="p">),</span> <span class="s1">'contenue'</span><span class="p">,</span> <span class="s1">'13'</span><span class="p">,</span> <span class="s1">'15'</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT: <a href="http://kezho.mit-license.org/">http://kezho.mit-license.org/</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ci-helper-calendar maintained by <a href="https://github.com/mfrancois">mfrancois</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
